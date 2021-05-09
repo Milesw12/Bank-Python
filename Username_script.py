@@ -16,4 +16,13 @@ def Login(user):
                     user = input("Insert username")
                     i = i+1
                     continue
-              
+
+
+def Password(password):
+    import base64
+    Dec_password = password.encode('ascii')
+    Enc_password = base64.b64encode(Dec_password)
+    
+
+
+          
